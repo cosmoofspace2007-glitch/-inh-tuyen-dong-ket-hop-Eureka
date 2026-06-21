@@ -6,10 +6,10 @@ spring:
         server:
           webmvc:
             routes:
-              - id: customer-service
-                uri: lb://customer-service
+              - id: products-service
+                uri: lb://products-service
                 predicates:
-                  - Path = /api/v1/customers/**
+                  - Path = /api/v1/products/**
 
 server:
   port: 8080
